@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<link rel="icon" href="library/gambar/stmbisa.png">
+	<title>Homepage</title>
+
+	<link rel="stylesheet" href="library/script/style.css">
+	<!-- <link rel="stylesheet" href="library/script/reset.css"> -->
+</head>
+<body>
+	
+	<header class="header">
+		<nav class="navbar">
+
+			<div class="nav-one">
+				<div class="email-content">
+					<img src="library/gambar/arroba.png" alt="">
+					<span class="email">info@smkn1-cirebon.sch.id</span>
+				</div>
+				
+				<div class="phone-content">
+					<img src="library/gambar/call.png" alt="">
+					<span class="phone">+62-0231-480202</span>
+				</div>
+			</div>
+
+			<div class="nav-two">
+				<div class="logo-brand">
+					<a href="index.html">
+						<img src="library/gambar/stmbisa.png" class="logo" alt="">
+					</a>
+
+					<div class="logo-text">
+						<h1>Teknik Informasi Komunikasi</h1>
+						<h4>SMK N 1 Cirebon</h4>	
+					</div>
+				</div>
+	
+				<ul class="nav-links">
+					<li>
+						<a class="nav-link" href="about.html">Tentang kita</a>
+					</li>
+					<li>
+						<a class="nav-link" href="jurusan.html">Jurusan</a>
+					</li>
+					<li class="dropdown">
+						<button class="dropbtn">Civitas
+						<img src="library/gambar/Path 2.png" style="display: inline;" alt="">
+						</button>
+
+						<ul class="dropdown-content">
+							<li><a class="nav-link" href="data-guru.html">Data Guru</a></li>
+							<li><a class="nav-link" href="data-staff.html">Data Staff</a></li>
+						</ul>
+					</li>
+					<li>
+						<a  class="nav-link" href="data-alumni.html">Alumni</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="info-hlmn">
+			<h1>Teknik Informasi Komunikasi  /  Jurusan  /  RPL</h1>
+		</div>
+
+		<div class="btn-jrsn">
+			<button>
+				<a href="#">RPL</a>
+			</button> <button>
+				<a href="#">TKJ</a>
+			</button>
+		</div>
+
+		<div class="kelas-jrsn">
+			<h5>*Pilih jurusan untuk melihat jadwal dan data siswa</h5>
+
+			<div class="kls">
+				<div class="logo-kls">
+					<a href="#">X - RPL 1</a>
+				</div>
+				<div class="logo-kls">
+					<a href="#">X - RPL 2</a>
+				</div>
+				<div class="logo-kls">
+					<a href="#">XI - RPL 1</a>
+				</div>
+				<div class="logo-kls">
+					<a href="#">XI - RPL 2</a>
+				</div>
+				<div class="logo-kls">
+					<a href="#">XII - RPL 1</a>
+				</div>
+				<div class="logo-kls">
+					<a href="data.html">XII - RPL 2 (KLIK INI BOR)</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<footer>
+		<div class="footer-content">
+			<div class="logo-brand">
+				<img src="library/gambar/stmbisa.png" class="logo" alt="">
+
+				<div class="logo-text">
+					<h1>Teknik Informasi Komunikasi</h1>
+					<h4>SMK N 1 Cirebon</h4>	
+				</div>
+			</div>
+
+			<div class="footer-menu">
+				<div class="kontak">
+					<h1>Kontak</h1>
+					<ul class="sub-menu">
+						<li>
+							Email : smkn-1@sch.id
+						</li>
+						<li>
+							Telp & Fax : +62-0231-480202
+						</li>
+						<li>
+							Jl.Perjuangan By Pass Sunyaragi, Cirebon, Indonesia
+						</li>
+					</ul>
+				</div>
+				<div class="menu">
+					<h1>Menu</h1>
+					<ul class="sub-menu">
+						<li>
+							<a href="#">Tentang Kami</a>
+						</li>
+						<li>
+							<a href="#">Jurusan</a>
+						</li>
+						<li>
+							<a href="#">Keunggulan</a>
+						</li>
+						<li>
+							<a href="#">Civitas</a>
+						</li>
+					</ul>
+					<ul class="sub-menu-2">
+						<li>
+							<a href="#">Civitas</a>
+						</li>
+						<li>
+							<a href="#">Fasilitas</a>
+						</li>
+						<li>
+							<a href="#">Galeri</a>
+						</li>
+						<li>
+							<a href="#">Blog</a>
+						</li>
+					</ul>
+				</div>
+				<div class="sosmed">
+					<h1>Social Media</h1>
+				</div>
+			</div>
+		</div>
+	
+		<div class="footer-cp">
+			<p>Copyright @ 2020 Abdullah Faris Affandi, All Reversered</p>
+		</div>
+	</footer>	
+	
+	<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		// Next/previous controls
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		// Thumbnail image controls
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			if (n > slides.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = slides.length}
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					slides[slideIndex-1].style.display = "block";
+					dots[slideIndex-1].className += " active";
+		} 
+	</script>		
+
+</body>
+</html>
